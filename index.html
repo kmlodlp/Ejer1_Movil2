@@ -20,6 +20,19 @@
       .nombre {
         padding-top: 1em;
       }
+
+      .navlink {
+        color: blue;
+      }
+
+      h5 > a {
+        color: lightslategrey;
+      }
+
+      aside > div > img {
+        width: calc(85%);
+        height: calc(40%);
+      }
     </style>
   </head>
   <body>
@@ -28,10 +41,9 @@
         <div class="col-12">
           <nav
             class="navbar navbar-expand-lg"
-            style="background-color: lightblue"
-          >
+            style="background-color: lightblue">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#"><span style="color: black; ">MOVIL II</span></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -39,19 +51,18 @@
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
+                    <a class="nav-link active" aria-current="page" href="https://i.workana.com/glosario/que-es-html-5/"
+                      ><span class="navlink">HTML 5</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="https://desarrolladoresweb.org/css/que-es-css-introduccion/">
+                      <span class="navlink">CSS</span></a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -59,9 +70,8 @@
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
+                      aria-expanded="false">
+                      <span class="navlink">JavaScript</span>
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -71,15 +81,13 @@
                       <li><hr class="dropdown-divider" /></li>
                       <li>
                         <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                          >Something else here</a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true"
-                      >Disabled</a
-                    >
+                      >Disabled</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -87,8 +95,7 @@
                     class="form-control me-2"
                     type="search"
                     placeholder="Search"
-                    aria-label="Search"
-                  />
+                    aria-label="Search"/>
                   <button class="btn btn-outline-success" type="submit">
                     Search
                   </button>
@@ -101,7 +108,12 @@
     </header>
     <div class="row m-3">
       <div class="col-4">
-        <aside class="m-1" style="background-color: lightblue">
+        <aside class="m-1 py-2 " style="background-color: lightblue">
+          <div class="img d-flex justify-content-center">
+            <img
+              src="https://www.jetorbit.com/blog/wp-content/uploads/2019/05/7-Framework-Javascript-yang-Paling-Banyak-Digunakan-1.jpg"
+              alt="FrameWork JavaScrip"/>
+          </div>
           <ul class="py-2">
             <li>
               <h5><a href="https://es.lipsum.com/">LOREM IPSUM</a></h5>
@@ -110,8 +122,7 @@
               <h5>
                 <a
                   href="https://www.bancodeimagenesgratis.com/2014/09/20-paisajes-naturales-de-nuestro.html"
-                  >PAISAJES</a
-                >
+                  >PAISAJES</a>
               </h5>
             </li>
             <li>
@@ -134,15 +145,13 @@
       <div class="col-8">
         <main
           class="contenido m-1 align-items-center"
-          style="background-color: blanchedalmond"
-        >
+          style="background-color: blanchedalmond">
           <h2 class="mb-4 text-center">¿Que es Lorem Ipsum?</h2>
           <div class="img d-flex justify-content-center">
             <img
               class="ps-2"
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNCd88vFQdTbKVa_CSF1jn9gDNm7S0uXwly6gb1gomTwqurX8wOGOfxM5C8ogHB9lZF6EDSe03a7COZSBJyTbYULDg4t46O075gpKLe0aJN4QBXYTowzph2MOhjiDRd2Tj73OyDw/s400/paisajes+naturales+(16).jpg"
-              alt="paisaje"
-            />
+              alt="paisaje"/>
           </div>
           <p class="my-3 px-2" style="text-align: justify">
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y
@@ -167,8 +176,7 @@
           <p class="nombre">Camilo Andres De La Peña Carvajal</p>
           <p class="correo">Camiloadelap@gmail.com</p>
           <a rel="stylesheet" href="Formulario.html" target="_blank"
-            >Formulario</a
-          >
+            >Formulario</a>
         </div>
       </div>
     </footer>
